@@ -37,4 +37,48 @@ This repo contains my Python notes from core to expert.
 - REPL is the facility of Live interpreter.
 - For Live interpreter there is a website available which use REPL tech.
 - Link: https://repl.it/languages/python3 
-- 
+
+### Variables and Lists
+- List means just like you want to store some name or anything, then we need to create a list for it.
+- To define a List in python: `x = [ "Manan", "Krish" , "Alok" , "Jay" , "Kick" ]` .
+- Where the names were called as Elements or items in python which were stored in variable `x`.
+- And if you do `type(x)`  then this will give you as datatype `List`.
+- Here in List, Elements starts from index 0 then 1 then 2 and continue.
+- If you do `x=[1]` or `x[1]` then this will give the o/p `'krish'` as it is in 1st index.
+- To find the total number of items/elements in a variable : `len(x)` ,where len stands for length which gives the total length of the variable.
+- Since, we know that every thing is dependent on a function same as this `x=[1]` or `x[1]` is also dependent on a function, when we run this, it calls a function named `__getitem__()` and that function gives the item required.
+- Similarly, if we do `x.__getitem__(1)` then this will give o/p as `'krish'`.
+#### Slicing in a List
+- If we dont want to print the entire list we can do slicing by giving the range to print.
+- Eg.: `x[2:4]` then o/p `['Alok' , 'Jay' ]` ,here it will starts from position 2 and goes up to 3, last number will always be excluded same as in example, 4 is excluded.
+- Similarly we can do as `x[:3]` ,This will starts from 0 ; `x[2:]` ,This will starts from 2 and print till last ; `x[:]` will print all the items.
+- Similarly we can also do `x[-1]` to print the last item ; same as `x[-2:]` will print last 2nd option till last.
+#### Use of List
+- If we want to store multiple data in a box, we need a List.
+- We can create a list inside a list to store multiple data lets say, we want to store id,name,roll no. in a list we can do as :
+` x = [ [1 , "Manan" , 1111] , [2, "Krish" ,2222] , [3 , "Lalki" ,3333] , [4 , "Opal" ,4444] ] ` .
+- Similarly if we do `len(x)`, will give output as `4`.
+- Similarly `x[0]`  o/p is `[1 , "Manan" , 1111]` .
+- Similarly `x[0][1] o/p is `['Manan']` .
+
+- `Question: How to retrieve coloumn wise data from List for eg. 2nd coloumn from x`.
+   ` x = [ [1 , "Manan" , 1111] , [2, "Krish" ,2222] , [3 , "Lalki" ,3333] , [4 , "Opal" ,4444] ] ` .
+- `Answer : It is impossible because List does'nt support coloumn wise data, list only fetches row wise data. For fetching the column data we have Arrays datatype and for using arrays we have to use numpy libraries. `
+
+### Array , Modules & Functions(Builtin,3rd Party)
+- Array function is not a builtin Function, we have to ask to load some third party `program file` and that program file typically known in programming world as `Modules` and for Array fuunction we have to load `numpy` as a Module.
+- `import numpy` where import is a function which loads 3rd party Modules and numpy is a Module which have functions like array.
+- Module contains 100's of Functions.
+- To know the functions of Module's run `dir(numpy)` dir will list all the functions inside numpy modules.
+- Similarly if you want to see all the functions which are `Builtin` eg.: print(),type(). Builtin means we don't have to go for third party programs/modules, it is bydefault present inside the python.
+- Run `dir(__builtins__)` will list all the builtin functions inside python.
+
+#### To create an Array
+- `import numpy` because array is a function of numpy module.
+-  Then create a list eg.: ` x = [ [1 , "Manan" , 1111] , [2, "Krish" ,2222] , [3 , "Lalki" ,3333] , [4 , "Opal" ,4444] ] ` .
+- Then convert that list into array  by `a = numpy.array(x)` ,where we have stored our array in a.
+- and if you see the datatype of a `type(a)` it is numpy array.
+- Now we can do same operations as `a[1:]`.
+- Now to print Coloumn wise date do `a[0:4 , 1]` will give you the 1st column data. 
+
+
