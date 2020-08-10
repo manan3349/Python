@@ -10,10 +10,10 @@ This repo contains my Python notes from core to expert.
 - Online interpreters are also called as Live interpreters.
 - Examples are in CMD if we run python and can do anything there then that thing is done live(hand to hand).
 
-`Question: How to read the Entire data of RAM/Memory ?`
-`Answer: 
+- ` Question: How to read the Entire data of RAM/Memory ?`
+- ` Answer: `
+ 
 
-`
 - Note: If you create any file with .py extension in the text editor like Notepad in windows then do save in " " (Double quotes) bcz if you save any file with doublequotes then it didn't add any .txt extension with it.
 
 ### Variables and Datatypes
@@ -29,6 +29,7 @@ This repo contains my Python notes from core to expert.
 
 ### Print function and REPL
 - To print any variable use `print(x)` or we can do print without using print function, by simply running the variable lets say `x` .
+
 #### `>>>` Symbol is known as REPL which means Read Evaluate Print Loop
 - Where `Print` uses print function thats why we can use any variable name direcly or eg. "hii" directly to cmd and get the output as hii.
 - Where `Evaluate` means if you write any expression to cmd then it will automatically evaluate that expression we don't need to write any function with it.
