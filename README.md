@@ -80,5 +80,23 @@ This repo contains my Python notes from core to expert.
 - and if you see the datatype of a `type(a)` it is numpy array.
 - Now we can do same operations as `a[1:]`.
 - Now to print Coloumn wise date do `a[0:4 , 1]` will give you the 1st column data. 
+- Here also indexing starts from 0.
+- For printing all data of 2nd column use :`a[: , 1]`
+- If we want to print 2 columns : `a[: , 0:2]`
 
+##### NOTE: For practicing in the live interpreter is good, but if once you terminate the interpreter by `exit()`,and then again opening `python` in terminal and searching for the data you created before; you doesn't get the same data you have created before. So the best practice is to do in offline way by creating a file and saving it or by using different softwares.
+
+### Taking input from the user.
+- If we want to take input from the user we have a function called `input()`, Lets say i want to take input from the user and store in x?
+- Do `x = input()` , this will asks user to give input and stored in x.
+
+#### Creating a program that will ask user to give input that eg. a user want to open chrome using python.
+- We create this file in Notepad, Open `notepad` .
+- `import os` will import the os module which contains functions like system() .
+- `x = input()` , this will take input from the user.
+- `os.system(x)`, system is a function, which calls the os to run the input givrn by the user.
+- Save the program by "input.py" ,using doublequotes will not save your file by .txt and make sure that saving the file to the same LOC where your terminal is
+##### Output 
+- Run as `python input.py` in cmd.
+- and give input as `chrome`.
 
