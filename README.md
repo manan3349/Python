@@ -6,7 +6,21 @@ This repo contains my Python notes from core to expert.
 ### Types of Interpreters:
 - We have 2 Methods to run a program or do tasks:
 - (a): By writing the code offline like notepad and other softwares like anaconda,etc and running the code
-- (b): Or we can do this by online interpreters present such as CMD But they can directly run th o/p.  Eg: like if do x=5 and enter then the value is assigned to x there in online interpreters.
+- (b): By IDE that is Integrated development environment.
+- The good thing about IDE is whatever code you write,it will save and same time you can run it like a live interpreter. and some more facilities like create and manage the files.
+- There were lots of IDE's available like: Spyder,eclipse,pycharm,Jupyter.
+- We were gonna use Jupyter.
+#### Setting up IDE
+- To install : `pip install jupyter`. in your cmd.
+- To launch : `jupyter  notebook`. ; this will open your jupyter notebook in your browser where we can write and run and save the code.
+- Click on `new` and then `python3` to open your new notebook.
+- This will run like a live interpreter same as REPL.
+- The box there where you write your code is known as `cell` and we can run one cell at a time.
+- To run your code use `shift+enter`, this will run your code and automatic go to next cell.
+- To delete the cell use: `Esc+dd` to delete.
+- Similarly for more keyboard shortcuts use `H`.
+
+- (c): Or we can do this by online interpreters present such as CMD But they can directly run the o/p.  Eg: like if do x=5 and enter then the value is assigned to x there in online interpreters.
 - Online interpreters are also called as Live interpreters.
 - Examples are in CMD if we run python and can do anything there then that thing is done live(hand to hand).
 
@@ -29,7 +43,6 @@ This repo contains my Python notes from core to expert.
 
 ### Print function and REPL
 - To print any variable use `print(x)` or we can do print without using print function, by simply running the variable lets say `x` .
-
 #### `>>>` Symbol is known as REPL which means Read Evaluate Print Loop
 - Where `Print` uses print function thats why we can use any variable name direcly or eg. "hii" directly to cmd and get the output as hii.
 - Where `Evaluate` means if you write any expression to cmd then it will automatically evaluate that expression we don't need to write any function with it.
@@ -72,6 +85,10 @@ This repo contains my Python notes from core to expert.
 - To know the functions of Module's run `dir(numpy)` dir will list all the functions inside numpy modules.
 - Similarly if you want to see all the functions which are `Builtin` eg.: print(),type(). Builtin means we don't have to go for third party programs/modules, it is bydefault present inside the python.
 - Run `dir(__builtins__)` will list all the builtin functions inside python.
+#### Basics of Modules
+- Module is just like a program file and every module comes from a library.
+- To install that library or module use : `pip install `module_name``.
+- To list all library of modules in your os use: `pip list`.
 
 #### To create an Array
 - `import numpy` because array is a function of numpy module.
@@ -99,4 +116,46 @@ This repo contains my Python notes from core to expert.
 ##### Output 
 - Run as `python input.py` in cmd.
 - and give input as `chrome`.
+- This will open your chrome browser.
 
+#### Running a program that will convert your voice into speech.
+- We have a Module called `pyttsx3` for converting your text into speech, where tts is text to speech.
+- Firstly install pyttsx3 module in your os as: `pip install pyttsx3`.
+- In this module we have different functions just like `speak` is a function that converts your text to speech.
+- Then open your python interpreter as `python` in cmd.
+- Then import your module: `import pyttsx3`
+- Then do print what you want to convert: `pyttsx3.speak("Hello World, Wellcome to our Python World.")`
+- Where speak is a function which will convert your text into speech.
+
+### Working on Jupyter
+- To launch : `jupyter  notebook`. ; this will open your jupyter notebook in your browser where we can write and run and save the code.
+- Click on `new` and then `python3` to open your new notebook.
+- `import os` will import all functions of os.
+- `dir (os)` will give you all the functions available in the os module.
+- We were going to use `system` module to open chrome,notepad,etc.
+- `os.system("Chrome")` will open your chrome browser.
+- `os.system("notepad")` will open your notepad.
+### Special characters
+#### Escape sequence keywords
+- Newline sequence -> `\n`
+- Tab sequence -> `\t`
+
+
+###### NOTE: In python there is no difference in double quotes and single quotes, you can run any special characters in any form.
+
+## Some Programs
+#### Creating a program that will speak "Welcome to my tools" and ask your choice to open any program.
+- Open `notepad` and do save your file as " " to avoid .txt extension.
+- write the following code in your file:
+- `import pyttsx3`
+- `import os`
+- `pyttsx3.speak("Welcome to my tools")`
+- `p = input("Enter your choice of program")`
+- `os.system(p)`
+- Do save this file in the loc of cmd or set your cmd to the file loc as per convinience.
+- Open CMD.
+- Run your file as `python mysoftware.py` ,here mysoftware.py is the name of the file.
+- Give input to the file as which software you like to open lets say `wmplayer`
+- O/P: your OS will open wmplayer.
+
+####
