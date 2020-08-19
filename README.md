@@ -135,14 +135,24 @@ This repo contains my Python notes from core to expert.
 - We were going to use `system` module to open chrome,notepad,etc.
 - `os.system("Chrome")` will open your chrome browser.
 - `os.system("notepad")` will open your notepad.
+
 ### Special characters
 #### Escape sequence keywords
 - Newline sequence -> `\n`
 - Tab sequence -> `\t`
 
+### Comments in Python
+- 1.) Line Comment: If we start a line with `#` , this will mark it as line comment.
 
 ###### NOTE: In python there is no difference in double quotes and single quotes, you can run any special characters in any form.
-
+### Some Tips & Tricks
+- 1.  If you put r in starting just like `print(r'Helloo \n Peoples')` then it gives output as in the same line as `O/P: Helloo \n Peoples`. Here r means consider it as row and       it doesn't process the special operation inside double quotes.           
+- 2.  `print()` function in python internally have a newline char and will always give new line.
+- 3.  If we want to know detail of any function, use `help(function_name)` .
+- 4.  If we don't want that print function would give newline, use `print("Hellooo" , end='')` .But this syntax only works in Python3.
+- 5.  In python, we don't use {} here in if else, we use spaces here and that is called as indentation. And Indentation must be same.
+- 6.  In python, we don't have a support of switch cases, because if,else & elif works as switch cases. 
+                   
 ## Some Programs
 #### Creating a program that will speak "Welcome to my tools" and ask your choice to open any program.
 - Open `notepad` and do save your file as " " to avoid .txt extension.
