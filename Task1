@@ -1,0 +1,45 @@
+import os
+
+print("____________________________________________Hello Manan This Is Cortana Here!____________________________________________")
+print()
+while True:   
+    print("___________________________________________What Program would you like to open?_________________________________________")
+    p = input()
+    if(("run" in p) or ("open" in p) or ("execute" in p) or ("Execute" in p) or ("search" in p ))  and (("browser" in p) or ("explorer" in p)):
+        print("Opening a Browser!")
+        os.system("iexplore")
+    elif(("run" in p) or ("execute" in p) or ("open" in p) or ("Execute" in p) or ("listen" in p))  and  (("mediaplayer" in p) or ("songplayer" in p) or ("media" in p) or ("songs" in p)):
+        print("Opening Media Player for You!")
+        os.system("wmplayer")
+    elif(("run" in p) or ("open" in p) or ("execute" in p) or ("Execute" in p) or ("write" in p) or ("note" in p)) and (("notepad" in p)or("editor" in p) or ("Write" in p) or ("note" in p)):
+        print("Opening Text Editor! ")
+        os.system("notepad")
+    elif(("run" in p) or ("open" in p) or ("execute" in p) or ("Calculate" in p))and (("calculator" in p) or ("Calculate" in p)):
+        print("Opening Calculator")
+        os.system("calc")    
+    elif(("run" in p) or ("open" in p) or ("Execute" in p) or ("execute" in p)) and (("jupyter" in p)or("IDE" in p)):
+        print("Opening Jupyter IDE")
+        os.system("jupyter notebook")
+    elif(("run" in p) or ("open" in p) or ("Execute" in p) or ("execute" in p) or ("paint" in p)) and (("paint" in p) or ("drawing" in p)):
+        print("Opening Paint Software!")
+        os.system("mspaint")
+    elif(("run" in p) or ("open" in p) or ("Execute" in p) or ("execute" in p)) and ("gitbash" in p):
+        print("Opening Git Bash")
+        os.system("git bash")
+    elif(("run" in p) or ("open" in p) or ("execute" in p) or ("Execute" in p) or ("search" in p )) and (("chrome" in p) or ("search" in p )):
+        print("Opening the Chrome Browser For you! ")
+        os.system("chrome")
+    elif(("run" in p) or ("execute" in p) or ("open" in p) or ("Execute" in p)) and ("putty" in p):
+        print("Opening Putty Software....")
+        os.system("putty")
+    elif(("run" in p) or ("execute" in p) or ("open" in p) or ("Execute" in p)) and("Notepad++" in p):
+        print("Opening the Notepad++ for Coding")      
+        os.system("notepad++.exe")              
+    elif(("run" in p) or ("open" in p) or ("execute" in p) or ("Execute" in p)) and (("Coding" in p) or ("Codeblocks" in p)) :
+        print("Opening the Codeblocks for Coding!  \n Please wait for a while")      
+        os.system("codeblocks.exe")
+    elif("exit" in p):
+        print("We are closing the program!")
+        print("________________________________________________________________________________________________________________________")
+        os.system(exit())
+        break
