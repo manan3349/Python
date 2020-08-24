@@ -175,9 +175,3 @@ This repo contains my Python notes from core to expert.
 - Run your file as `python mysoftware.py` ,here mysoftware.py is the name of the file.
 - Give input to the file as which software you like to open lets say `wmplayer`
 - O/P: your OS will open wmplayer.
-
-## 16 Aug 2020 | Day 3
-
-#### String
-- According to python, string is basically a sequence of the char means every char is independent.
-
