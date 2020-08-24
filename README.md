@@ -18,6 +18,7 @@ This repo contains my Python notes from core to expert.
 - The box there where you write your code is known as `cell` and we can run one cell at a time.
 - To run your code use `shift+enter`, this will run your code and automatic go to next cell.
 - To delete the cell use: `Esc+dd` to delete.
+- If we do `Alt + Enter` Then it will run the current cell and at the same time execute new cell.
 - Similarly for more keyboard shortcuts use `H`.
 
 - (c): Or we can do this by online interpreters present such as CMD But they can directly run the o/p.  Eg: like if do x=5 and enter then the value is assigned to x there in online interpreters.
@@ -66,6 +67,9 @@ This repo contains my Python notes from core to expert.
 - Eg.: `x[2:4]` then o/p `['Alok' , 'Jay' ]` ,here it will starts from position 2 and goes up to 3, last number will always be excluded same as in example, 4 is excluded.
 - Similarly we can do as `x[:3]` ,This will starts from 0 ; `x[2:]` ,This will starts from 2 and print till last ; `x[:]` will print all the items.
 - Similarly we can also do `x[-1]` to print the last item ; same as `x[-2:]` will print last 2nd option till last.
+- If we do like make a list let say `n= [1,2,3,4,5,6,7,8,9]` and if we do slicing as `n=[2:6]` then it will give o/p as `[3,4,5,6]` so this means bydefault it will jump by 1 because bydefault if we write or not but they have colon 1 as there syntax as `n=[2:6:1]`
+- And we can change its bydefaut nature as `n=[2:6:2]`, this will give o/p as `[3,5,7]` means jumped  by 2 positions.
+
 #### Use of List
 - If we want to store multiple data in a box, we need a List.
 - We can create a list inside a list to store multiple data lets say, we want to store id,name,roll no. in a list we can do as :
@@ -78,6 +82,10 @@ This repo contains my Python notes from core to expert.
    ` x = [ [1 , "Manan" , 1111] , [2, "Krish" ,2222] , [3 , "Lalki" ,3333] , [4 , "Opal" ,4444] ] ` .
 - `Answer : It is impossible because List does'nt support coloumn wise data, list only fetches row wise data. For fetching the column data we have Arrays datatype and for using arrays we have to use numpy libraries. `
 
+#### `in` operator in  list
+- We can use `in` operator to find anything from a list.
+- Syntax: `"Manan" in x` , will find Manan in list x and if present give o/p as `True`.
+- If we use as `and` operator and `or` operator to find multiple word in a List.
 ### Array , Modules & Functions(Builtin,3rd Party)
 - Array function is not a builtin Function, we have to ask to load some third party `program file` and that program file typically known in programming world as `Modules` and for Array fuunction we have to load `numpy` as a Module.
 - `import numpy` where import is a function which loads 3rd party Modules and numpy is a Module which have functions like array.
@@ -168,4 +176,8 @@ This repo contains my Python notes from core to expert.
 - Give input to the file as which software you like to open lets say `wmplayer`
 - O/P: your OS will open wmplayer.
 
-####
+## 16 Aug 2020 | Day 3
+
+#### String
+- According to python, string is basically a sequence of the char means every char is independent.
+
