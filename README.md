@@ -175,3 +175,14 @@ This repo contains my Python notes from core to expert.
 - Run your file as `python mysoftware.py` ,here mysoftware.py is the name of the file.
 - Give input to the file as which software you like to open lets say `wmplayer`
 - O/P: your OS will open wmplayer.
+
+## 23 Aug 2020 | Day 5
+
+##### Agenda For todays journey -
+- How we can create the API.
+- What is CGI.
+- The journey of Website or Webapp.
+- How can we run a program/code  without login/locally or remotely/ssh and get the o/p in other pc.?
+- Ans:  For this we have 2 pc's , one is windows and the other one is fedora in VM
+
+
